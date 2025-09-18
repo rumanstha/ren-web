@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Globe, Facebook, Phone, MapPin, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 const RelianceEducationNetwork = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -15,11 +16,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 1,
       title: "Reliance Int'l Academy",
-      image: "images/schools/ria.png",
+      image: "/images/schools/ria.png",
       location: "Kapan - 10, Kathmandu, Nepal",
       established: "PG - GRADE 10",
 
-      logo: "images/logos/ria.png",
+      logo: "/images/logos/ria.png",
       socialLinks: {
         website: "https://www.riaschool.edu.np/",
         facebook: "https://www.facebook.com/riaschoolwing",
@@ -32,11 +33,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 2,
       title: "Reliance Public School",
-      image: "images/schools/rps.png",
+      image: "/images/schools/rps.png",
       location: "Bibekchowk, Kathmandu, Nepal",
       established: "PG - GRADE 10",
 
-      logo: "images/logos/rps.png",
+      logo: "/images/logos/rps.png",
       socialLinks: {
         website: "https://rps.edu.np/",
         facebook: "https://www.facebook.com/reliancepublic/",
@@ -49,11 +50,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 3,
       title: "Nepal Vidya Sadhan",
-      image: "images/schools/ria.png",
+      image: "/images/schools/ria.png",
       location: "Gopikrishna Nagar-7, Kathmandu,Nepal",
       established: "PG - GRADE 10",
 
-      logo: "images/logos/nvs.png",
+      logo: "/images/logos/nvs.png",
       socialLinks: {
         website: "https://nvs.edu.np/",
         facebook: "https://www.facebook.com/nepalvidhyasadan",
@@ -66,11 +67,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 4,
       title: "Reliance Co.ed School",
-      image: "images/schools/co.ed.png",
+      image: "/images/schools/co.ed.png",
       location: "Baluwakhani, Kapan, Kathmandu, Nepal",
       established: "PG - GRADE 10",
 
-      logo: "images/logos/co.ed.png",
+      logo: "/images/logos/co.ed.png",
       socialLinks: {
         website: "https://reliancecoed.edu.np/",
         facebook: "https://www.facebook.com/reliancecoed.edu.np",
@@ -86,11 +87,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 1,
       title: "Reliance International Academy +2",
-      image: "images/schools/ria+2.png",
+      image: "/images/schools/ria+2.png",
       location: "Saraswatinagar, Chabahil, Kathmandu",
       programs: "+2 Science and Mangament",
 
-      logo: "images/logos/ria+2.png",
+      logo: "/images/logos/ria+2.png",
       socialLinks: {
         website: "https://ria.edu.np/",
         facebook: "https://www.facebook.com/relianceintlacademy",
@@ -103,11 +104,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 2,
       title: "Reliance College",
-      image: "images/schools/ria+2.png",
+      image: "/images/schools/ria+2.png",
       location: "Saraswatinagar, Chabahil, Kathmandu",
       programs: "BCA, BBS, BA/BSW, MBA MBS",
 
-      logo: "images/logos/rc.png",
+      logo: "/images/logos/rc.png",
       socialLinks: {
         website: "https://riacollege.edu.np/",
         facebook: "https://www.facebook.com/reliancecollege.062",
@@ -120,11 +121,11 @@ const RelianceEducationNetwork = () => {
     {
       id: 3,
       title: "Reliance International College",
-      image: "images/schools/ria+2.png",
+      image: "/images/schools/ria+2.png",
       location: "Saraswatinagar, Chabahil, Kathmandu",
       programs: "BCA BSc.CSIT BBA",
 
-      logo: "images/logos/ric.png",
+      logo: "/images/logos/ric.png",
       socialLinks: {
         website: "https://ricollege.edu.np/",
         facebook: "https://www.facebook.com/relianceintlcollege",
@@ -193,20 +194,23 @@ const RelianceEducationNetwork = () => {
       <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-300"></div>
 
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
           src={data.image}
           alt={data.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
         {/* Logo badge */}
         <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
           <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
-            <img
+            <Image
               src={data.logo}
               alt="Logo"
-              className="w-full h-full object-contain"
+              width={32}
+              height={32}
+              className="object-contain"
             />
           </div>
         </div>
@@ -286,20 +290,23 @@ const RelianceEducationNetwork = () => {
       <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-300"></div>
 
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
           src={data.image}
           alt={data.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
         {/* Logo badge */}
         <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
           <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
-            <img
+            <Image
               src={data.logo}
               alt="Logo"
-              className="w-full h-full object-contain"
+              width={32}
+              height={32}
+              className="object-contain"
             />
           </div>
         </div>
@@ -416,10 +423,13 @@ const RelianceEducationNetwork = () => {
 
         {/* Background Logo */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0">
-          <img
-            src="images/renlogo.png"
+          <Image
+            src="/images/renlogo.png"
             alt="Logo"
-            className="w-[900px] h-[900px] object-contain opacity-30 select-none"
+            width={900}
+            height={900}
+            className="object-contain opacity-30 select-none"
+            priority
           />
         </div>
 
