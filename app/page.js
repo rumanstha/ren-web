@@ -49,23 +49,6 @@ const RelianceEducationNetwork = () => {
     },
     {
       id: 3,
-      title: "Nepal Vidya Sadhan",
-      image: "/images/schools/ria.png",
-      location: "Gopikrishna Nagar-7, Kathmandu,Nepal",
-      established: "PG - GRADE 10",
-
-      logo: "/images/logos/nvs.png",
-      socialLinks: {
-        website: "https://nvs.edu.np/",
-        facebook: "https://www.facebook.com/nepalvidhyasadan",
-        instagram: "https://www.instagram.com/nepalvidhyasadan/",
-        linkedin: "https://www.linkedin.com/company/nepal-vidya-sadhan",
-        youtube: "https://www.youtube.com/@nepalvidyasadhan",
-        tiktok: "https://www.tiktok.com/@nepalvidyasadhan",
-      },
-    },
-    {
-      id: 4,
       title: "Reliance Co.ed School",
       image: "/images/schools/co.ed.png",
       location: "Baluwakhani, Kapan, Kathmandu, Nepal",
@@ -79,6 +62,23 @@ const RelianceEducationNetwork = () => {
         linkedin: "https://www.linkedin.com/school/reliance-co-ed-schoo",
         youtube: "https://www.youtube.com/@RelianceCo-EdSchool",
         tiktok: "https://www.tiktok.com/@reliancecoedschool",
+      },
+    },
+    {
+      id: 4,
+      title: "Nepal Vidya Sadhan",
+      image: "/images/schools/ria.png",
+      location: "Gopikrishna Nagar-7, Kathmandu,Nepal",
+      established: "PG - GRADE 10",
+
+      logo: "/images/logos/nvs.png",
+      socialLinks: {
+        website: "https://nvs.edu.np/",
+        facebook: "https://www.facebook.com/nepalvidhyasadan",
+        instagram: "https://www.instagram.com/nepalvidhyasadan/",
+        linkedin: "https://www.linkedin.com/company/nepal-vidya-sadhan",
+        youtube: "https://www.youtube.com/@nepalvidyasadhan",
+        tiktok: "https://www.tiktok.com/@nepalvidyasadhan",
       },
     },
   ];
