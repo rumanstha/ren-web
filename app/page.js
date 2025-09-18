@@ -106,7 +106,7 @@ const RelianceEducationNetwork = () => {
       title: "Reliance College",
       image: "/images/schools/ria+2.png",
       location: "Saraswatinagar, Chabahil, Kathmandu",
-      programs: "BCA, BBS, BA/BSW, MBA MBS",
+      programs: "BCA, BBS, BA/BSW, MBS",
 
       logo: "/images/logos/rc.png",
       socialLinks: {
@@ -123,7 +123,7 @@ const RelianceEducationNetwork = () => {
       title: "Reliance International College",
       image: "/images/schools/ria+2.png",
       location: "Saraswatinagar, Chabahil, Kathmandu",
-      programs: "BCA BSc.CSIT BBA",
+      programs: "BCA, BSc.CSIT, BBA, MBA",
 
       logo: "/images/logos/ric.png",
       socialLinks: {
