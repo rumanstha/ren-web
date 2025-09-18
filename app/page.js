@@ -403,10 +403,15 @@ const RelianceEducationNetwork = () => {
         >
           <h1
             className={`
-    text-2xl sm:text-4xl md:text-5xl lg:text-6xl
-    font-semibold md:font-bold tracking-tight
-    text-white drop-shadow-md
-    mb-6
+    text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
+    font-bold tracking-tight leading-tight
+    text-white text-center
+    drop-shadow-lg shadow-black/30
+    mb-8 sm:mb-10 md:mb-12
+    transition-all duration-300 ease-out
+    hover:scale-[1.02] hover:drop-shadow-xl
+    bg-gradient-to-r from-white via-blue-50 to-white bg-clip-text text-transparent
+    [text-shadow:2px_4px_8px_rgba(0,0,0,0.3)]
   `}
           >
             Reliance Education Network
