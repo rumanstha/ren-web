@@ -67,7 +67,7 @@ const RelianceEducationNetwork = () => {
     {
       id: 4,
       title: "Nepal Vidya Sadhan",
-      image: "/images/schools/ria.png",
+      image: "/images/schools/Nvs.png",
       location: "Gopikrishna Nagar-7, Kathmandu,Nepal",
       established: "PG - GRADE 10",
 
