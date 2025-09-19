@@ -138,7 +138,7 @@ const RelianceEducationNetwork = () => {
   ];
 
   const stats = [
-    { number: "8+", label: "School & College", icon: "🏫" },
+    { number: "7", label: "School & College", icon: "🏫" },
     { number: "5000+", label: "Students", icon: "👨‍🎓" },
     { number: "25+", label: "Years Experience", icon: "🏆" },
     { number: "500+", label: "TEAM", icon: "⭐" },
@@ -407,7 +407,7 @@ const RelianceEducationNetwork = () => {
             className={`
     text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
     font-bold tracking-tight leading-tight
-     text-center
+     text-white text-center
     drop-shadow-lg shadow-black/30
     mb-8 sm:mb-10 md:mb-12
     transition-all duration-300 ease-out
