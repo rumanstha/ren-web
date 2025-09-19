@@ -183,12 +183,13 @@ const RelianceEducationNetwork = () => {
 
   const SchoolCard = ({ data, index }) => (
     <div
-      className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl ${
+      className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl cursor-pointer ${
         isVisible ? "animate-fadeInUp" : "opacity-0"
       }`}
       style={{ animationDelay: `${index * 100}ms` }}
       onMouseEnter={() => setHoveredCard(`school-${data.id}`)}
       onMouseLeave={() => setHoveredCard(null)}
+      onClick={() => window.open(data.socialLinks.website, "_blank")}
     >
       {/* Floating gradient orb */}
       <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-300"></div>
@@ -279,12 +280,13 @@ const RelianceEducationNetwork = () => {
 
   const CollegeCard = ({ data, index }) => (
     <div
-      className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl ${
+      className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl cursor-pointer ${
         isVisible ? "animate-fadeInUp" : "opacity-0"
       }`}
       style={{ animationDelay: `${(index + 5) * 100}ms` }}
       onMouseEnter={() => setHoveredCard(`college-${data.id}`)}
       onMouseLeave={() => setHoveredCard(null)}
+      onClick={() => window.open(data.socialLinks.website, "_blank")}
     >
       {/* Floating gradient orb */}
       <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-300"></div>
@@ -405,7 +407,7 @@ const RelianceEducationNetwork = () => {
             className={`
     text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl
     font-bold tracking-tight leading-tight
-    text-white text-center
+     text-center
     drop-shadow-lg shadow-black/30
     mb-8 sm:mb-10 md:mb-12
     transition-all duration-300 ease-out
